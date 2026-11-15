@@ -25,6 +25,9 @@ Find the PDF report here: **[PDF Report](https://github.com/SheetalKaswan/networ
 | 2 - SSH Brute Force | Repeated short-lived connections to port 22 - banner excahnge, then FIN,ACK close - until one connection completes key exchange and stays open | 50,940 | ~69 min | T1110 - Brute Force -> T1078 - Valid Accounts |
 | 3 - vsftpd Backdoor Exploitation | FTP login with a :) trigger string in the username, immediately followed by an unsolicited session on port 6200 | 311 | <1 sec to trigger | T1190 - Exploit Public-Facing Application / T1059.004 - Unix Shell | 
 
+## Attack Traffic Timeline – chronological reconstruction of events
+<img width="969" height="726" alt="attack traffic timeline" src="https://github.com/user-attachments/assets/ea89d669-6f51-46c1-b429-6e4637b7c993" />
+
 ## Attack Timeline Visualization
 Generated from a Wireshark packet export using analyze_attack.py:
 1. **Top Panel (log scale):** Packet volume per time window, coloor-coded by phase. Reconnaissance is a sharp, compressesd spike; the brute force is a long, steady band; the successful session's close (packet 185060, RST,ACK) and the backdoor trigger are both marked right at the point exploitation begins.
