@@ -9,6 +9,8 @@ This project demonstartes the SOC analyst workflow end to end:
 `raw packet capture -> phase reconstruction -> MITRE ATT&CK mapping -> a Python-genrated timeline visualization -> a structured incident analysis report with concrete detection and remediation recommendations` 
 the same artefacts a real incident response handoff would produce.
 
+Find the PDF report here: **[PDF Report](https://github.com/SheetalKaswan/network-forensics-attack-mapping/blob/main/network_forensics_attack_mapping.pdf)**
+
 ## Tools Used
 - Wireshark
 - Nmap
